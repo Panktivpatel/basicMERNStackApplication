@@ -1,0 +1,224 @@
+body {
+    height: 100%; /* Set the height of the content div to 100% */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.bg-doctor{
+    background-color: #A4DCEC;
+}
+
+.container {
+    position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+  }
+
+.register {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 5%;
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+  }
+
+.forms-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.profile{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 25vh;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .input-field .icon {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4a8ef2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .button:hover{
+    background-color: #A4DCEC;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  @media (min-width: 1200px) {
+    /* Define column classes for large screens (>= 1200px) */
+    .col-lg-1 {
+        flex: 0 0 8.33%;
+        max-width: 8.33%;
+        height: 100%;
+    }
+    
+    .col-lg-2 {
+        flex: 0 0 16.66%;
+        max-width: 16.66%;
+        height: 100%;
+    }
+    
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+        height: 100%;
+    }
+    
+    .col-lg-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        height: 100%;
+    }
+    
+    .col-lg-5 {
+        flex: 0 0 41.66%;
+        max-width: 41.66%;
+        height: 100%;
+    }
+    
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 100%;
+    }
+    
+    .col-lg-7 {
+        flex: 0 0 58.33%;
+        max-width: 58.33%;
+        height: 100%;
+    }
+    
+    .col-lg-8 {
+        flex: 0 0 66.66%;
+        max-width: 66.66%;
+        height: 100%;
+    }
+    
+    .col-lg-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+        height: 100%;
+    }
+    
+    .col-lg-10 {
+        flex: 0 0 83.33%;
+        max-width: 83.33%;
+        height: 100%;
+    }
+    
+    .col-lg-11 {
+        flex: 0 0 91.66%;
+        max-width: 91.66%;
+        height: 100%;
+    }
+    
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+  
+  }
+
+  @media (min-width: 720px) and (max-width: 1199px) {
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      height: 100%;
+  }
+  }
+  
+  /* Define column classes for small screens (>= 576px) */
+  @media (min-width: 576px) and (max-width: 719px) {
+    .image{
+      display: none;
+    }
+    .container{
+      background-color: #A4DCEC;
+    }
+  }
